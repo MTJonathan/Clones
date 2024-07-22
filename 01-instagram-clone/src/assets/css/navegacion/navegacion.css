@@ -1,0 +1,33 @@
+.navegacion{
+    height: 100vh;
+    border-right: 1px solid #1D1D1C;
+    position: sticky;
+    top: 0;
+    padding: 35px 20px;
+    text-align: start;
+}
+.navegacion nav{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+.ig-letra{
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.opcionNav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.opcionNav:hover{
+    background-color: #1A1A1B;
+}
+.opcionItem:first-child img{
+    border-radius: 50%;
+    width: 30px;
+}
