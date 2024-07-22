@@ -12,7 +12,7 @@
     gap: 5px
 }
 .ig-letra{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 15px;
 }
 .opcionNav{
@@ -23,6 +23,7 @@
     gap: 15px;
     border-radius: 10px;
     padding: 15px;
+    cursor: pointer;
 }
 .opcionNav:hover{
     background-color: #1A1A1B;
