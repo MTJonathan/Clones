@@ -5,7 +5,6 @@ import perfilIcono from '../../assets/img/navegacion/perfilIcono.jpg'
 function Sugerencias() {
     return(
         <>
-
             <aside className='sugerencias'>
                 <div className="PerfilPrincipal">
                     <PerfilPrincipal 
@@ -18,29 +17,24 @@ function Sugerencias() {
                 <Separador />
                 <div className="perfilesSugerencias">
                     <Perfiles 
-                        user={"tina_120105"} 
-                        txt={"Sugerencia para ti"} 
-                        txtBtn={"Seguir" }
+                        user={"midudev"} 
+                        txt={"Sugerencia para ti"}
                     />
                     <Perfiles 
-                        user={"claec.edu.do"} 
-                        txt={"Sugerencia para ti"} 
-                        txtBtn={"Seguir" }
+                        user={"itshannaowo"} 
+                        txt={"Sugerencia para ti"}
                     />
                     <Perfiles
-                        user={"cruwkkk"} 
+                        user={"sergiecode"} 
                         txt={"Sugerencia para ti"} 
-                        txtBtn={"Seguir" }
                     />
                     <Perfiles
-                        user={"secretesz_tata"} 
+                        user={"acampossalazar"} 
                         txt={"Sugerencia para ti"} 
-                        txtBtn={"Seguir" }
                     />
                     <Perfiles
-                        user={"the.goodjack"} 
-                        txt={"Sugerencia para ti"} 
-                        txtBtn={"Seguir" }
+                        user={"fluminenseFC"} 
+                        txt={"Sugerencia para ti"}
                     />
                 </div>
                 <Informacion />

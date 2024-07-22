@@ -1,16 +1,23 @@
-export function Perfiles({user,txt, txtBtn}) {
+import {useState} from 'react'
+export function Perfiles({user,txt}) {
+    const [isFollowing, setIsFollowing] = useState(false)
+    const handleFollow = () => {
+        setIsFollowing(!isFollowing)
+    }
+    const txtBtn = isFollowing ? 'Seguiendo' : 'Seguir'
+    const btnClass = isFollowing ? 'perfilesBtn perfilesBtnIsFollow' : 'perfilesBtn'
     return(
         <>
             <article className="perfilesMostras">
                 <div className="imgPerfiles">
-                    <img src={`https://unavatar.io/${user}`} alt=""/>
+                    <img src={`https://unavatar.io/${user}`} alt="fotoPerfil"/>
                 </div>
                 <div className="txtPerfiles">
                     <span className="userPerfiles">{user}</span>
                     <span className="sugerenciaPerfiles">{txt}</span>
                 </div>
                 <div className="btnPerfiles">
-                    <button>{txtBtn}</button>
+                    <button className={btnClass} onClick={handleFollow}>{txtBtn}</button>
                 </div>
             </article>
         </>
@@ -28,7 +35,7 @@ export function PerfilPrincipal({img,user,txt, txtBtn}) {
                     <span className="sugerenciaPerfiles principalSugerencia">{txt}</span>
                 </div>
                 <div className="btnPerfiles">
-                    <button>{txtBtn}</button>
+                    <button className='perfilesBtn'>{txtBtn}</button>
                 </div>
             </article>
         </>
@@ -53,9 +60,16 @@ export function Informacion(){
         <>
             <div className="informacionPerfiles">
                 <span>
-                    <a href="">Informacion</a> · <a href="">Ayuda</a> · <a href="">Prensa</a> · <a href="">API</a> · 
-                    <a href="">Empleo</a> · <a href="">Privacidad</a> · <a href="">Condiciones</a> · <a href="">Ubicaciones</a>
-                     · <a href="">Idioma</a> · <a href="">Meta Verified</a>
+                    <a href="https://about.instagram.com/" target="_blank">Informacion</a> · 
+                    <a href="https://help.instagram.com/" target="_blank">Ayuda</a> · 
+                    <a href="https://about.instagram.com/blog" target="_blank">Prensa</a> · 
+                    <a href="https://developers.facebook.com/docs/instagram-platform" target="_blank">API</a> · 
+                    <a href="https://about.instagram.com/about-us/careers" target="_blank">Empleo</a> · 
+                    <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect" target="_blank">Privacidad</a> · 
+                    <a href="https://help.instagram.com/581066165581870/" target="_blank">Condiciones</a> · 
+                    <a href="https://www.instagram.com/explore/locations/" target="_blank">Ubicaciones</a> · 
+                    <a href="" target="_blank">Idioma</a> · 
+                    <a href="" target="_blank">Meta Verified</a>
                 </span>
                 <span>
                     &copy; 2024 INSTAGRAM FROM META

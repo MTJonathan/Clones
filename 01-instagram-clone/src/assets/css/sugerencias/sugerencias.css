@@ -23,6 +23,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .txtPerfiles{
     display: flex;
@@ -32,6 +33,7 @@
 }
 .txtPerfiles .userPerfiles{
     font-size: 13px;
+    cursor: pointer;
 }
 .txtPerfiles .sugerenciaPerfiles{
     font-size: 12px;
@@ -45,13 +47,17 @@
     justify-content: start;
     align-items: center;
 }
-.btnPerfiles button{
+.btnPerfiles .perfilesBtn{
     background-color: transparent;
     border: none;
     color: #0076E6;
 }
-.btnPerfiles button:hover{
+.btnPerfiles .perfilesBtn:hover{
     color: #fff;
+}
+.perfilesBtnIsFollow{
+    color: #787978 !important;
+    translate: -12px 0;
 }
 .separador{
     display: grid;
@@ -59,6 +65,7 @@
     padding: 0 0 0 20px;
 }
 .separador .txtSeparador span{
+    font-size: 14px;
     color: #A7A8A0;
 }
 .separador .btnSeparador{
@@ -90,7 +97,9 @@
     font-size: 12px;
     text-decoration: none;
     color: rgb(115, 115, 115);
-    /*  */
+}
+.informacionPerfiles span a:hover{
+    text-decoration: underline;
 }
 .informacionPerfiles span:last-child{
     font-size: 12px;
