@@ -2,8 +2,8 @@ import '../../assets/css/sugerencias/ventanaEmergente.css'
 export function VentanaEmergente({btnCancelar, user, desactivarVentana, dejarDeSeguir}) {
     return(
         <>
-            <aside className={btnCancelar}>
-                <article className="ventanaEmergenteContainer">
+            <aside className={btnCancelar} onClick={desactivarVentana}>
+                <article className="ventanaEmergenteContainer" onClick={(e) => e.stopPropagation()}>
                     <div className="ventanaEmergenteImg">
                         <img src={`https://unavatar.io/${user}`} alt="" />
                     </div>
