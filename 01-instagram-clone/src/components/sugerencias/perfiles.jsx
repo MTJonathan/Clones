@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import { VentanaEmergente } from './ventanaEmergente'
+import { VentanaCambiar } from './ventanaCambiar';
 export function Perfiles({user,txt}) {
     const [isFollowing, setIsFollowing] = useState(false)
     const [ventanaActiva, setVentanaActiva] = useState(false);
@@ -44,6 +45,14 @@ export function Perfiles({user,txt}) {
     )
 }
 export function PerfilPrincipal({img,user,txt, txtBtn}) {
+    const [VentanaCambiarActive, setVentanaCambiarActive] = useState(false);
+    const cerrarVentanaCambiar = () => {
+        setVentanaCambiarActive(false);
+    }
+    const activeVentanaCambiar = () => {
+        setVentanaCambiarActive(true);
+    }
+    const ventanaCambiarClass = VentanaCambiarActive ? 'ventanaCambiar ventanaCambiarActive' : 'ventanaCambiar';
     return(
         <>
             <article className="perfilesMostras">
@@ -55,9 +64,10 @@ export function PerfilPrincipal({img,user,txt, txtBtn}) {
                     <span className="sugerenciaPerfiles principalSugerencia">{txt}</span>
                 </div>
                 <div className="btnPerfiles">
-                    <button className='perfilesBtn'>{txtBtn}</button>
+                    <button className='perfilesBtn' onClick={activeVentanaCambiar}>{txtBtn}</button>
                 </div>
             </article>
+            <VentanaCambiar ventanaCambiarClass={ventanaCambiarClass} desactivarVentana={cerrarVentanaCambiar} />
         </>
     )
 }
