@@ -1,11 +1,25 @@
 import {useState} from 'react'
+import { VentanaEmergente } from './ventanaEmergente'
 export function Perfiles({user,txt}) {
     const [isFollowing, setIsFollowing] = useState(false)
-    const handleFollow = () => {
-        setIsFollowing(!isFollowing)
+    const [ventanaActiva, setVentanaActiva] = useState(false);
+    const DejarSeguir = () => {
+        setIsFollowing(false);
+        setVentanaActiva(false);
     }
+    const handleFollow = () => {
+        if (isFollowing) {
+            setVentanaActiva(true);
+        } else {
+            setIsFollowing(true);
+        }
+    }
+    const desactivarVentana = () => {
+        setVentanaActiva(false);
+    };
     const txtBtn = isFollowing ? 'Seguiendo' : 'Seguir'
     const btnClass = isFollowing ? 'perfilesBtn perfilesBtnIsFollow' : 'perfilesBtn'
+    const btnCancelar = ventanaActiva ? 'ventanaEmergente activeVentana' : 'ventanaEmergente';
     return(
         <>
             <article className="perfilesMostras">
@@ -20,6 +34,12 @@ export function Perfiles({user,txt}) {
                     <button className={btnClass} onClick={handleFollow}>{txtBtn}</button>
                 </div>
             </article>
+            <VentanaEmergente 
+                btnCancelar={btnCancelar}
+                user={user}
+                desactivarVentana={desactivarVentana}
+                dejarDeSeguir={DejarSeguir}
+            />
         </>
     )
 }

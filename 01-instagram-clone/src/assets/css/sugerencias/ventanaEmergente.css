@@ -1,0 +1,39 @@
+.ventanaEmergente{
+    position: absolute;
+    display: none;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.ventanaEmergente.activeVentana{
+    display: grid;
+}
+.ventanaEmergenteContainer{
+    display: grid;
+    place-items: center;
+    width: 400px;
+    gap: 23px;
+    background-color: #262727;
+    border-radius: 13px;
+    padding: 32px;
+}
+.ventanaEmergenteImg img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.btnVentanaEmergente{
+    display: grid;
+    gap: 20px;
+}
+.btnVentanaEmergente button{
+    background-color: transparent;
+    border: none;
+}
+.btnVentanaEmergente button:first-child{
+    font-weight: 800;
+    color: #EB4956;
+}
