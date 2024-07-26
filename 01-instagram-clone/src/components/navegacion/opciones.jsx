@@ -1,7 +1,7 @@
-function Opciones({icono, txt, iconoActive}) {
+function Opciones({icono, txt, iconoActive, handleClick}) {
     return(
         <>
-            <div className="opcionNav">
+            <div className="opcionNav" onClick={handleClick}>
                 <div className="opcionItem svgOpcion">
                     <span className="iconoOpcionDisabled">{icono}</span>
                     <span className="iconoOpcionActive">{iconoActive}</span>

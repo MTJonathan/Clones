@@ -6,8 +6,10 @@
 }
 .navegacionContainer{
     display: grid;
+    width: 19%;
     position: fixed;
-    margin: 35px 13px 0 13px;
+    margin: 35px auto;
+    padding: 0 13px;
     top: 0;
     gap: 25px;
 }
@@ -51,10 +53,9 @@
     transform: translateX(16px);
 }
 .navegacionResponsiva{
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
     width: 100%;
-    position: fixed;
+    position: fixed ;
     bottom: 0;
     display: none;
     border-top: 1.5px solid #1D1D1C;
@@ -97,7 +98,9 @@
         justify-content: center;
     }
     .navegacionContainer{
-        margin: 25px 11px 0 11px;
+        width: 7%;
+        padding: 0 20px 0 10px;
+        margin: 35 auto;
     }
     .opcionNav .txtOpcion{
         display: none;
@@ -128,6 +131,9 @@
     .contenidoHeader{
         gap: 23px;
         justify-content: space-between;
+    }
+    .contenidoHeader input{
+        padding: 20px 20px;
     }
     .headerContainer .imgHeader{
         display: none;

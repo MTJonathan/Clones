@@ -1,6 +1,7 @@
 import Opciones from "./opciones"
-import { LetraCambiar } from "./iconos"
-import { Notificaciones } from "./iconos"
+import { LetraCambiar, Notificaciones } from "./iconos"
+import { NotificacionesActive } from "./iconosActive"
+import { NavLinks } from "./navLinks"
 export const Header = () => {
     return (
         <>
@@ -11,7 +12,7 @@ export const Header = () => {
                     </div>
                     <div className="contenidoHeader">
                         <input type="search" placeholder="Buscar"/>
-                        <Opciones icono={<Notificaciones/>} txt="Notificaciones"/>
+                        <NavLinks to={'notifications'}><Opciones icono={<Notificaciones/>} iconoActive={<NotificacionesActive/>} txt="Notificaciones"/></NavLinks>
                     </div>
                 </div>
             </header>

@@ -9,6 +9,7 @@ import Sugerencias from './components/sugerencias/sugerencias.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 import { NavegacionResponse } from './components/navegacion/navegacionResponsiva.jsx'
 import { Header } from './components/navegacion/header.jsx'
+import { Notifications } from './components/mains/notifications.jsx'
 function App() {
   return (
     <>
@@ -19,11 +20,12 @@ function App() {
         <Route path="/explorer" element={<Explorarmain />} />
         <Route path="/reels" element={<ReelsMains />} />
         <Route path='/messenger' element={<MensajeMain />}/>
+        <Route path='/notifications' element={<Notifications />}/>
         <Route path='*' element={<h1>404</h1>}/>
       </Routes>
       <NavegacionResponse />
       <Sugerencias />
-    </>
+    </> 
   )
 }
 
