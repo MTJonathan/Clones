@@ -1,18 +1,52 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import '../../assets/css/navegacion/navegacion.css'
 import { Letra, Inicio, Busqueda, Explorar, Reels, Mensaje, Notificaciones, Crear, ImgPerfil, Menu } from './iconos.jsx'
-import { InicioActive, ExplorarActive, ReelsActive, MensajeActive, LogoResposive } from './iconosActive.jsx'
+import { InicioActive, ExplorarActive, ReelsActive, MensajeActive, LogoResposive, NotificacionesActive } from './iconosActive.jsx'
 import Opciones from './opciones.jsx'
 import {NavLinks} from './navLinks.jsx'
 import { CrearOpciones } from './crearOpciones.jsx'
+import { MasOpciones } from './masOpciones.jsx'
 function Navegacion() {
     const [classCreate, setClassCreate] = useState(false)
-    const handleClickCrear = () => {
-        setClassCreate(!classCreate)
+    const crearOpcionesRef = useRef(null)
+    const btnCrearRef = useRef(null)
+
+    const [classMas, setClassMas] = useState(false)
+    const masOpcionesRef = useRef(null)
+    const btnMasRef = useRef(null)
+    const handleClickCrear = (event) => {
+        event.stopPropagation();
+        setClassCreate(!classCreate);
     }
+    const handleClickOutside = (event) => {
+        if (crearOpcionesRef.current && !crearOpcionesRef.current.contains(event.target) && btnCrearRef.current && !btnCrearRef.current.contains(event.target)) {
+            setClassCreate(false)
+        }
+    }
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [])
     
+    const handleClickMas = () => {
+        setClassMas(!classMas)
+    }
+    const handleClickOutsideMas = (event) => {
+        if (masOpcionesRef.current && !masOpcionesRef.current.contains(event.target) && btnMasRef.current && !btnMasRef.current.contains(event.target)) {
+            setClassMas(false)
+        }
+    }
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutsideMas)
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutsideMas)
+        }
+    }, [])
     const txtClassCrate = classCreate ? 'crearOpciones' : 'noMostrarCrear'
+    const txtClassMas = classMas ? 'masOpciones' : 'noMostrarMas'
     return(
         <>
             <aside className='navegacion'>
@@ -25,11 +59,12 @@ function Navegacion() {
                         <NavLinks to='/explorer'><Opciones icono={<Explorar/>} iconoActive={<ExplorarActive/>} txt="Explorar"/></NavLinks>
                         <NavLinks to='/reels'><Opciones icono={<Reels/>} iconoActive={<ReelsActive/>} txt="Reels"/></NavLinks>
                         <NavLinks to='/messenger'><Opciones icono={<Mensaje/>} iconoActive={<MensajeActive/>} txt="Mensajes"/></NavLinks>
-                        <Opciones icono={<Notificaciones/>} txt="Notificaciones"/>
-                        <Opciones icono={<Crear/>} handleClick={handleClickCrear}  txt="Crear"/>
-                        <CrearOpciones classPrincipal={txtClassCrate}/>
-                        <Opciones icono={<ImgPerfil/>} txt="Perfil"/>
-                        <Opciones icono={<Menu/>} txt="Más"/>
+                        <NavLinks to='/notifications'><Opciones icono={<Notificaciones/>} iconoActive={<NotificacionesActive/>} txt="Notificaciones"/></NavLinks>
+                        <Opciones icono={<Crear/>} handleClick={handleClickCrear} ref={btnCrearRef} txt="Crear"/>
+                        <CrearOpciones classPrincipal={txtClassCrate} ref={crearOpcionesRef}/>
+                        <NavLinks to='/profile'><Opciones icono={<ImgPerfil/>} iconoActive={<ImgPerfil/>} txt="Perfil"/></NavLinks>
+                        <Opciones icono={<Menu/>} ref={btnMasRef} txt="Más" handleClick={handleClickMas}/>
+                        <MasOpciones ref={masOpcionesRef} classPrincipal={txtClassMas}/>
                     </nav>
                 </div>
                 

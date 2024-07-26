@@ -38,6 +38,9 @@
     border-radius: 50%;
     width: 30px;
 }
+.isActive .opcionItem:first-child img{
+    border: 2px solid #fff;
+}
 .iconoOpcionActive{
     display: none;
 }

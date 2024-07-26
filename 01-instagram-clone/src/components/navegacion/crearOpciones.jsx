@@ -1,9 +1,11 @@
+import React, {forwardRef} from 'react'
 import { PublicacionSvg, DirectoSvg } from "./iconos"
 import "../../assets/css/navegacion/crearOpciones.css"
-export const CrearOpciones = ({classPrincipal}) => {
+export const CrearOpciones = forwardRef(({classPrincipal}, ref) => {
+    
     return(
         <>
-            <aside className={classPrincipal}>
+            <aside className={classPrincipal} ref={ref}>
                 <article className="crearOpcionesContainer">
                     <div className="crearPublicacion">
                         <span className="txtPublicacion">Publicación</span>
@@ -17,4 +19,4 @@ export const CrearOpciones = ({classPrincipal}) => {
             </aside>
         </>
     )
-}
+})

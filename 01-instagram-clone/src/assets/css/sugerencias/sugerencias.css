@@ -62,7 +62,7 @@
 .separador{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 32px;
 }
 .separador .txtSeparador span{
     font-size: 14px;
@@ -90,7 +90,7 @@
     flex-wrap: wrap;
     gap: 3px;
     color: rgb(115, 115, 115);
-    padding-left: 20px;
+    padding-left: 32px;
 }
 .informacionPerfiles span a{
     display: block;

@@ -1,0 +1,53 @@
+.masOpciones{
+    position: absolute;
+    top: 0;
+    left: 28px;
+    transform: translateY(-10px);
+    background-color: #272627;
+    padding: 8px;
+    border-radius: 13px;
+    width: 300px;
+}
+.masOpciones ul{
+    list-style-type: none;
+}
+.masOpciones ul li{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-radius: 13px;
+}
+.masOpciones ul li:hover{
+    cursor: pointer;
+    background-color: #3D3D3C;
+}
+.masOpcionesPrincipales{
+    padding-bottom: 8px;
+}
+.masOpcionesPrincipales li{
+    padding: 14px 20px;
+}
+.threads{
+    border-top: 5px solid #3D3D3C;
+    border-bottom: 5px solid #3D3D3C;
+    padding: 8px 0;
+}
+.threads li{
+    padding: 20px 20px;
+}
+.masOpcionesCambiar{
+    padding: 8px 0;
+}
+.masOpcionesCambiar li{
+    padding: 18px 20px;
+}
+.masOpcionesSalir{
+    border-top: 1.5px solid #3D3D3C;
+    padding: 8px 0;
+}
+.masOpcionesSalir li{
+    padding: 18px 20px;
+}
+.noMostrarMas{
+    display: none;
+}

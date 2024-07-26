@@ -1,7 +1,9 @@
-function Opciones({icono, txt, iconoActive, handleClick}) {
-    return(
+import React, { forwardRef } from 'react';
+
+const Opciones = forwardRef(({ icono, txt, iconoActive, handleClick }, ref) => {
+    return (
         <>
-            <div className="opcionNav" onClick={handleClick}>
+            <div className="opcionNav" onClick={handleClick} ref={ref}>
                 <div className="opcionItem svgOpcion">
                     <span className="iconoOpcionDisabled">{icono}</span>
                     <span className="iconoOpcionActive">{iconoActive}</span>
@@ -11,6 +13,7 @@ function Opciones({icono, txt, iconoActive, handleClick}) {
                 </div>
             </div>
         </>
-    )
-}
-export default Opciones
+    );
+});
+
+export default Opciones;

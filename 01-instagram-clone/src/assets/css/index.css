@@ -11,7 +11,7 @@ body{
 }
 #root{
   display: grid;
-  grid-template-columns: 19% 1fr 23%;
+  grid-template-columns: 19% 1fr;
   padding: 0;
 }
 img{
@@ -26,17 +26,12 @@ a{
 }
 @media(width < 1264px){
     #root{
-      grid-template-columns: 7% 1fr 23%;
-    }
-}
-@media(width < 1160px){
-    #root{
       grid-template-columns: 7% 1fr;
     }
 }
 @media(width < 1060px){
     #root{
-      grid-template-columns: 9% 1fr;
+      grid-template-columns: 8.5% 1fr;
     }
 }
 @media(width < 767px){

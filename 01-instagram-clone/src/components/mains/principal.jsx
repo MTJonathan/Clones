@@ -1,22 +1,28 @@
 import React from 'react'
-
+import Sugerencias from '../sugerencias/sugerencias'
+import '../../assets/css/mains/principal/principal.css'
 function Principal() {
     return (
         <>
             <main className='principal'>
-                <h1>Principal</h1> <br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore blanditiis molestiae aspernatur provident voluptatum reprehenderit inventore dolorum, harum, repellat rerum possimus deleniti eaque natus quas officiis est voluptatibus? Eaque, nostrum!</p><br /><br /><br />
+                <div className="contenidoPrincipal">
+                    <h1>Contenido Principal</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br /><br />
+                </div>
+                <Sugerencias />
             </main>
         </>
     )

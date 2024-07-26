@@ -5,11 +5,11 @@ import Principal from './components/mains/principal.jsx'
 import {Explorarmain} from './components/mains/explorar.jsx'
 import { ReelsMains } from './components/mains/reels.jsx'
 import { MensajeMain } from './components/mains/mensajes.jsx'
-import Sugerencias from './components/sugerencias/sugerencias.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 import { NavegacionResponse } from './components/navegacion/navegacionResponsiva.jsx'
 import { Header } from './components/navegacion/header.jsx'
 import { Notifications } from './components/mains/notifications.jsx'
+import { PerfilMain } from './components/mains/perfil.jsx'
 function App() {
   return (
     <>
@@ -21,10 +21,10 @@ function App() {
         <Route path="/reels" element={<ReelsMains />} />
         <Route path='/messenger' element={<MensajeMain />}/>
         <Route path='/notifications' element={<Notifications />}/>
+        <Route path='/profile' element={<PerfilMain />}/>
         <Route path='*' element={<h1>404</h1>}/>
       </Routes>
       <NavegacionResponse />
-      <Sugerencias />
     </> 
   )
 }
