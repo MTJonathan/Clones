@@ -13,7 +13,6 @@ body{
   display: grid;
   grid-template-columns: 19% 1fr 23%;
   padding: 0;
-  overflow: hidden;
 }
 img{
   width: 100%;
