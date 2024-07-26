@@ -7,10 +7,12 @@ import { ReelsMains } from './components/mains/reels.jsx'
 import { MensajeMain } from './components/mains/mensajes.jsx'
 import Sugerencias from './components/sugerencias/sugerencias.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
+import { NavegacionResponse } from './components/navegacion/navegacionResponsiva.jsx'
 function App() {
   return (
     <>
       <Navegacion />
+      <NavegacionResponse />
       <Routes>
         <Route path="/" element={<Principal />} />
         <Route path="/explorer" element={<Explorarmain />} />

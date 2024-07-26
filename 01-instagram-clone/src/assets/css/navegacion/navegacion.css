@@ -50,9 +50,27 @@
     display: none;
     transform: translateX(16px);
 }
+.navegacionResponsiva{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    border-top: 1.5px solid #1D1D1C;
+}
+.navegacionResponsiva ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
 @media (width <= 1264px){
     .navegacion{
         justify-content: center;
+    }
+    .navegacionContainer{
+        margin: 25px 11px 0 11px;
     }
     .opcionNav .txtOpcion{
         display: none;
@@ -67,6 +85,10 @@
 @media(width < 767px){
     .navegacion{
         display: none;
+    }
+    .navegacionResponsiva{
+        display: block;
+        background-color: #010000;
     }
     
 }
