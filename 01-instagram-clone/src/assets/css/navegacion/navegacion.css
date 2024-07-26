@@ -1,10 +1,15 @@
 .navegacion{
+    display: grid;
     height: 100vh;
     border-right: 1px solid #1D1D1C;
-    position: sticky;
-    top: 0;
-    padding: 35px 20px;
     text-align: start;
+}
+.navegacionContainer{
+    display: grid;
+    position: fixed;
+    margin: 35px 13px 0 13px;
+    top: 0;
+    gap: 25px;
 }
 .navegacion nav{
     display: flex;
@@ -12,7 +17,6 @@
     gap: 5px
 }
 .ig-letra{
-    margin-bottom: 25px;
     margin-left: 15px;
 }
 .opcionNav{
@@ -31,4 +35,38 @@
 .opcionItem:first-child img{
     border-radius: 50%;
     width: 30px;
+}
+.iconoOpcionActive{
+    display: none;
+}
+.isActive .iconoOpcionDisabled{
+    display: none;
+}
+.isActive .iconoOpcionActive{
+    display: block;
+}
+
+.logoResponsive{
+    display: none;
+    transform: translateX(16px);
+}
+@media (width <= 1264px){
+    .navegacion{
+        justify-content: center;
+    }
+    .opcionNav .txtOpcion{
+        display: none;
+    }
+    .logoLetra{
+        display: none;
+    }
+    .logoResponsive{
+        display: block;
+    }
+}
+@media(width < 767px){
+    .navegacion{
+        display: none;
+    }
+    
 }

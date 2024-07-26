@@ -1,11 +1,12 @@
-function Opciones({icono, txt}) {
+function Opciones({icono, txt, iconoActive}) {
     return(
         <>
             <div className="opcionNav">
-                <div className="opcionItem">
-                    {icono}
+                <div className="opcionItem svgOpcion">
+                    <span className="iconoOpcionDisabled">{icono}</span>
+                    <span className="iconoOpcionActive">{iconoActive}</span>
                 </div>
-                <div className="opcionItem">
+                <div className="opcionItem txtOpcion">
                     {txt}
                 </div>
             </div>

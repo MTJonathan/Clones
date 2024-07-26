@@ -104,3 +104,8 @@
 .informacionPerfiles span:last-child{
     font-size: 12px;
 }
+@media(width < 1160px){
+    .sugerencias{
+        display: none;
+    }
+}

@@ -1,4 +1,4 @@
-import { Letra } from "../navegacion/iconos"
+import { LetraCambiar } from "../navegacion/iconos"
 import '../../assets/css/sugerencias/ventanaCambiar.css'
 export function VentanaCambiar({ventanaCambiarClass, desactivarVentana}) {
     return(
@@ -6,7 +6,7 @@ export function VentanaCambiar({ventanaCambiarClass, desactivarVentana}) {
             <aside className={ventanaCambiarClass} onClick={desactivarVentana}>
                 <div className="ventanaCambiarContainer" onClick={(e) => e.stopPropagation()}>
                     <div className="imgVentanaCambiar">
-                        <Letra />
+                        <LetraCambiar />
                     </div>
                     <form action="">
                         <input className="inputVentanaCambiar" type="text" placeholder="Telefono, usuario o correo electronico"/>

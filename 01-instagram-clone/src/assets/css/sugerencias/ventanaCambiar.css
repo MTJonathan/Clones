@@ -1,5 +1,5 @@
 .ventanaCambiar{
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0;
     left: 0;
@@ -16,6 +16,7 @@
     display: grid;
     place-items: center;
     width: 400px;
+    height: 410px;
     padding: 20px 65px;
     border-radius: 13px;
     background-color: #272626;
@@ -90,4 +91,11 @@
     margin: 23px;
     font-size: 28px;
     cursor: pointer;
+}
+@media(width <= 500px){
+    .ventanaCambiarContainer{
+        width: 80%;
+        padding: 20px 32px;
+    }
+
 }
