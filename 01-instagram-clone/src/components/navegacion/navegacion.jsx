@@ -47,6 +47,7 @@ function Navegacion() {
     }, [])
     const txtClassCrate = classCreate ? 'crearOpciones' : 'noMostrarCrear'
     const txtClassMas = classMas ? 'masOpciones' : 'noMostrarMas'
+    
     return(
         <>
             <aside className='navegacion'>

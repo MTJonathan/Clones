@@ -11,6 +11,18 @@
 .masOpciones ul{
     list-style-type: none;
 }
+.masOpciones ul a{
+    display: flex;
+    width: 100%;
+    gap: 13px;
+}
+.masOpciones .threads .svgCompartir svg{
+    width: 23px;
+    transform: translate(123px);
+}
+.masOpciones .threads .svgCompartir path{
+    color: transparent;
+}
 .masOpciones ul li{
     display: flex;
     align-items: center;
@@ -20,6 +32,9 @@
 .masOpciones ul li:hover{
     cursor: pointer;
     background-color: #3D3D3C;
+}
+.masOpciones ul li:hover .svgCompartir path{
+    color: #868787;
 }
 .masOpcionesPrincipales{
     padding-bottom: 8px;
@@ -32,7 +47,8 @@
     border-bottom: 5px solid #3D3D3C;
     padding: 8px 0;
 }
-.threads li{
+.threads li a{
+    align-items: center;
     padding: 20px 20px;
 }
 .masOpcionesCambiar{

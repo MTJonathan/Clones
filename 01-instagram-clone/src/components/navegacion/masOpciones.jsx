@@ -1,5 +1,5 @@
 import React, {forwardRef} from 'react'
-import { ConfiguracionSvg, ActividadSvg, GuardadosSvg, CambiarAspectoSvg, InformarUnProblemaSvg, ThreadsSvg } from './iconos'
+import { ConfiguracionSvg, ActividadSvg, GuardadosSvg, CambiarAspectoSvg, InformarUnProblemaSvg, ThreadsSvg, CompartirSvg } from './iconos'
 import "../../assets/css/navegacion/masOpciones.css"
 export const MasOpciones = forwardRef(({classPrincipal}, ref) => {
     
@@ -34,8 +34,11 @@ export const MasOpciones = forwardRef(({classPrincipal}, ref) => {
                     <div className="threads">
                         <ul>
                             <li>
-                                <span className='svgThreads'><ThreadsSvg/>
-                                </span><span className='txtThreads'>Threads</span>
+                                <a href="https://www.threads.net/" target="_blank">
+                                    <span className='svgThreads'><ThreadsSvg/></span>
+                                    <span className='txtThreads'>Threads</span>
+                                    <span className='svgCompartir'><CompartirSvg/></span>
+                                </a>
                             </li>
                         </ul>
                     </div>
