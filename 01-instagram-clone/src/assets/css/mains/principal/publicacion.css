@@ -25,18 +25,23 @@
 }
 .usarioPostInfo .usuario {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 .usarioPostInfo .usuario span {
+  font-weight: 600;
   font-size: 14px;
 }
 .usarioPostInfo .lugar span {
   font-size: 12px;
 }
 .usarioPostInfo li {
-  font-size: 12px;
+list-style: none;
+  font-size: 12.8px;
   color: #949594;
+}
+.usarioPostInfo li span{
+  color: #949594 !important;
 }
 .usarioPostInfo .icono {
   position: absolute;
@@ -62,7 +67,7 @@
   height: 26px;
   cursor: pointer;
 }
-.corazonActive svg{
+.corazonActive svg {
   animation: heart-beat 0.5s;
 }
 .corazonDesabled {
@@ -71,40 +76,40 @@
 .corazonFill svg {
   fill: red;
 }
-.compartirDesabled{
+.compartirDesabled {
   display: none;
 }
-.postDescripcion{
-    padding-bottom: 20px;
-    border-bottom: 1px solid #242424;
+.postDescripcion {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #242424;
 }
-.postDescripcion{
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
+.postDescripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
-.comentarInput{
-    background-color: transparent;
-    border: none;
-    outline: none;
+.comentarInput {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
-.comentarInput::placeholder{
-    font-size: 14.5px;
+.comentarInput::placeholder {
+  font-size: 14.5px;
 }
-.megutasDescripcion{
-    font-size: 14.5px;
-    font-weight: 600;
+.megutasDescripcion {
+  font-size: 14.5px;
+  font-weight: 600;
 }
-.userDescripcion{
-    font-size: 14.5px;
-    font-weight: 600;
+.userDescripcion {
+  font-size: 14.5px;
+  font-weight: 600;
 }
-.txtPost{
-    font-size: 14px;
+.txtPost {
+  font-size: 14px;
 }
-.verComentariosDescripcion{
-    font-size: 14.8px;
-    color: #616B75;
+.verComentariosDescripcion {
+  font-size: 14.8px;
+  color: #616b75;
 }
 @keyframes heart-beat {
   0% {
