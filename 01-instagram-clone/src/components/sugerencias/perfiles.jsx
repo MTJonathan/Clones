@@ -47,9 +47,11 @@ export function Perfiles({user,txt}) {
 export function PerfilPrincipal({img,user,txt, txtBtn}) {
     const [VentanaCambiarActive, setVentanaCambiarActive] = useState(false);
     const cerrarVentanaCambiar = () => {
+        document.body.classList.remove("modal-abierto");
         setVentanaCambiarActive(false);
     }
     const activeVentanaCambiar = () => {
+        document.body.classList.add("modal-abierto");
         setVentanaCambiarActive(true);
     }
     const ventanaCambiarClass = VentanaCambiarActive ? 'ventanaCambiar ventanaCambiarActive' : 'ventanaCambiar';

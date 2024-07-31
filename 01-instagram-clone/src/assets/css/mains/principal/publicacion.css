@@ -3,7 +3,6 @@
 }
 .post {
   display: grid;
-  position: relative;
   width: 80%;
   margin: 0 auto;
   padding: 10px;
@@ -11,6 +10,7 @@
 }
 .postInfo {
   display: grid;
+  position: relative;
   align-items: center;
   grid-template-columns: 1fr 11fr;
   gap: 10px;
@@ -45,8 +45,11 @@ list-style: none;
 }
 .usarioPostInfo .icono {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  top: 0;
+  margin: 8px;
+  width: 23px;
+  height: 23px;
 }
 .imgPrincipal img {
   border-radius: 5px;

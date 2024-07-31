@@ -1,0 +1,39 @@
+.opcionesPost {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.opcionesPostContainer {
+  width: 400px;
+  border-radius: 23px;
+  background-color: #262726;
+}
+.opcionesPostContainer ul {
+  list-style: none;
+}
+.opcionesPostContainer ul li {
+  text-align: center;
+  padding: 18px;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(54, 54, 54);
+  cursor: pointer;
+}
+.opcionesPostContainer ul li:last-child {
+  border-bottom: none;
+}
+.opcionesPostContainer ul li.rojo {
+  font-weight: 600;
+  color: #eb4955;
+}
+.opcionesPostDesabled {
+  display: none;
+}
+body.modal-abierto {
+  overflow: hidden; /* Oculta la barra de desplazamiento */
+}
