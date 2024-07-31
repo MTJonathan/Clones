@@ -38,7 +38,9 @@ const Publicacion = () => {
         }
         tiempo={"1 Año"}
       />
-      <br /><br />
+      <div className="espacio">
+        <br /><br />
+      </div>
     </section>
   );
 };

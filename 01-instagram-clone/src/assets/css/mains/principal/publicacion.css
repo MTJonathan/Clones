@@ -71,6 +71,9 @@
 .corazonFill svg {
   fill: red;
 }
+.compartirDesabled{
+  display: none;
+}
 @keyframes heart-beat {
   0% {
     transform: scale(1);
