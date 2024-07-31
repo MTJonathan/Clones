@@ -105,3 +105,18 @@ export const CompartirSvg = () => {
         </svg>
     )
 }
+export const Icono3puntos = () => {
+    return(
+        <svg aria-label="Más opciones" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Más opciones</title><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
+    )
+}
+export const IconoCompartir = () => {
+    return(
+        <svg aria-label="Comentar" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Comentar</title><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+    )
+}
+export const GuardarSvg = () => {
+    return(
+        <svg aria-label="Guardar" class="x1lliihq x1n2onr6 x5n08af Guardadas" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Guardar</title><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+    )
+}

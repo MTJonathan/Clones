@@ -1,26 +1,15 @@
 import React from 'react'
 import Sugerencias from '../sugerencias/sugerencias'
 import '../../assets/css/mains/principal/principal.css'
+import Storys from './principal/storys'
+import Publicacion from './principal/publicacion'
 function Principal() {
     return (
         <>
             <main className='principal'>
                 <div className="contenidoPrincipal">
-                    <h1>Contenido Principal</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illum eligendi doloremque aliquam beatae aut, quaerat, enim asperiores saepe temporibus aliquid rem iure optio magni, expedita voluptatibus minus eum nulla.</p><br /><br /><br />
+                   <Storys />
+                   <Publicacion />
                 </div>
                 <Sugerencias />
             </main>

@@ -1,5 +1,8 @@
 .sugerencias{
     display: flex;
+    position: relative;
+    z-index: 2;
+    background-color: #000;
     flex-direction: column;
     padding-top: 32px;
     gap: 20px;

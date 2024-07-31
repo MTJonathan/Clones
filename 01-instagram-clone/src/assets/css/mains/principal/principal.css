@@ -1,8 +1,11 @@
 .principal{
     display: grid;
     grid-template-columns: 1fr 32%;
+    overflow: hidden;
 }
-
+.contenidoPrincipal{
+    overflow: hidden;
+}
 @media(width < 1160px){
     .principal{
         grid-template-columns: 1fr;
