@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../../assets/css/mains/principal/opcionesPost.css'
 const OpcionesPost = ({className, handleClick}) => {
   return (
-    <div className={className} onClick={handleClick}>
+    <aside className={className} onClick={handleClick}>
       <div className="opcionesPostContainer" onClick={(e) => e.stopPropagation()}>
         <ul>
             <li className='rojo'>Denunciar</li>
@@ -16,7 +16,7 @@ const OpcionesPost = ({className, handleClick}) => {
             <li onClick={handleClick}>Cancelar</li>
         </ul>
       </div>
-    </div>
+    </aside>
   )
 }
 

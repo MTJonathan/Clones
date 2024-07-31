@@ -37,3 +37,11 @@
 body.modal-abierto {
   overflow: hidden; /* Oculta la barra de desplazamiento */
 }
+@media(width <= 500px){
+    .opcionesPostContainer{
+        width: 80%;
+    }
+    .opcionesPostContainer ul li{
+        padding: 16px;
+    }
+}
