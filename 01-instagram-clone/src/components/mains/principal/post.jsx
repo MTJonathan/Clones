@@ -1,6 +1,7 @@
 import React from "react";
 import PostInfo from "./postInfo";
 import PostBtn from "./postBtn";
+import PostDescripcion from "./postDescripcion";
 const Post = ({ img, user, lugar, imgPrincipal, tiempo }) => {
   return (
     <article className="post">
@@ -9,6 +10,7 @@ const Post = ({ img, user, lugar, imgPrincipal, tiempo }) => {
         <img src={imgPrincipal} alt={user} />
       </div>
       <PostBtn />
+      <PostDescripcion user={user}/>
     </article>
   );
 };

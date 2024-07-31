@@ -1,17 +1,17 @@
 .navegacion{
     display: grid;
     height: 100vh;
-    border-right: 1px solid #1D1D1C;
     text-align: start;
 }
 .navegacionContainer{
     display: grid;
     width: 19%;
     position: fixed;
-    margin: 35px auto;
-    padding: 0 13px;
+    margin: 0 auto;
+    padding: 35px 13px;
     top: 0;
     gap: 25px;
+    border-right: 1px solid #1D1D1C;
 }
 .navegacion nav{
     display: flex;
