@@ -1,15 +1,16 @@
 import React from 'react'
 import './assets/css/App.css'
 import Navegacion from './components/navegacion/navegacion.jsx'  
-import Principal from './components/mains/principal.jsx'
-import {Explorarmain} from './components/mains/explorar.jsx'
-import { ReelsMains } from './components/mains/reels.jsx'
-import { MensajeMain } from './components/mains/mensajes.jsx'
+import Principal from './components/mains/principal/principal.jsx'
+import {Explorarmain} from './components/mains/explorar/explorar.jsx'
+import { ReelsMains } from './components/mains/reels/reels.jsx'
+import { MensajeMain } from './components/mains/mensajes/mensajes.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 import { NavegacionResponse } from './components/navegacion/navegacionResponsiva.jsx'
 import { Header } from './components/navegacion/header.jsx'
-import { Notifications } from './components/mains/notifications.jsx'
-import { PerfilMain } from './components/mains/perfil.jsx'
+import { Notifications } from './components/mains/notificaciones/notifications.jsx'
+import { PerfilMain } from './components/mains/Perfil/perfil.jsx'
+import Pagina404 from './components/mains/404/404.jsx'
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
         <Route path='/messenger' element={<MensajeMain />}/>
         <Route path='/notifications' element={<Notifications />}/>
         <Route path='/profile' element={<PerfilMain />}/>
-        <Route path='*' element={<h1>404</h1>}/>
+        <Route path='*' element={<Pagina404 />}/>
       </Routes>
       <NavegacionResponse />
     </> 

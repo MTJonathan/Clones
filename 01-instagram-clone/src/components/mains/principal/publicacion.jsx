@@ -15,9 +15,6 @@ const Publicacion = () => {
           tiempo={publicacion.tiempo}
         />
       ))}
-      <div className="espacio">
-        <br /><br />
-      </div>
     </section>
   );
 };

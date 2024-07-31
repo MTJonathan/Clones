@@ -1,0 +1,15 @@
+export const footerEnlaces = [
+    {enlace:'https://about.meta.com/' ,nombre: "Meta"},
+    {enlace:'https://about.instagram.com/' ,nombre: "Información"},
+    {enlace:'https://about.instagram.com/blog/' ,nombre: "Blog"},
+    {enlace:'https://about.instagram.com/about-us/careers' ,nombre: "Empleo"},
+    {enlace:'https://help.instagram.com/' ,nombre: "Ayuda"},
+    {enlace:'https://developers.facebook.com/docs/instagram-platform' ,nombre: "API"},
+    {enlace:'https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect' ,nombre: "Privacidad"},
+    {enlace:'https://help.instagram.com/581066165581870/' ,nombre: "Condiciones"},
+    {enlace:'#' ,nombre: "Ubicaciones"},
+    {enlace:'https://www.instagram.com/web/lite/' ,nombre: "Instagram Lite"},
+    {enlace:'https://www.threads.net/' ,nombre: "Threads"},
+    {enlace:'https://www.facebook.com/help/instagram/261704639352628' ,nombre: "Subir contactos y personas no usuarias"},
+    {enlace:'#' ,nombre: "Meta Verified"},
+]
