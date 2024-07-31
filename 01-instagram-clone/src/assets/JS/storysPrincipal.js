@@ -1,0 +1,17 @@
+export const storysPrincipal = [
+    {img: `https://unavatar.io/midudev`, user: `midudev`},
+    {img: `https://unavatar.io/todo_code`, user: `todo_code`},
+    {img: `https://unavatar.io/sergiecode`, user: `sergiecode`},
+    {img: `https://unavatar.io/fanovargas`, user: `fanodric`},
+    {img: `https://unavatar.io/itshannaowo`, user: `itshannaowo`},
+    {img: `https://unavatar.io/LionelMessi0K`, user: `leomessi`},
+    {img: `https://unavatar.io/3am_musica`, user: `3am.musica`},
+    {img: `https://unavatar.io/ClubALoficial`, user: `alianzalima`},
+    {img: `https://unavatar.io/Nicki_Nicole19`, user: `naiki`},
+    {img: `https://unavatar.io/acampossalazar`, user: `acampossalazar`},
+    {img: `https://unavatar.io/fluminenseFC`, user: `fluminenseFC`},
+    {img: `https://unavatar.io/FCBarcelona_es`, user: `FCBarcelona`},
+    {img: `https://unavatar.io/realmadriden`, user: `realmadrid`},
+    {img: `https://unavatar.io/fmsworldseries`, user: `fmsworldseries`},
+    {img: `https://unavatar.io/InfoFreestyle`, user: `InfoFreestyle`},
+]

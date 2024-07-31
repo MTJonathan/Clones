@@ -1,5 +1,11 @@
 export const publicacionesArray = [
   {
+    img: "https://unavatar.io/fanovargas",
+    user: "fanodric",
+    imgPrincipal: "https://pbs.twimg.com/media/GRR8gwoWYAAiQ0n?format=jpg&name=large",
+    tiempo: "3 Meses",
+  },
+  {
     img: "https://unavatar.io/luisitoeIpillo",
     user: "luisitoComunica",
     lugar: "CDMX",
