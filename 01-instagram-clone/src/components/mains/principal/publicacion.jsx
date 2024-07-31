@@ -46,6 +46,14 @@ const Publicacion = () => {
         }
         tiempo={"2 Año"}
       />
+      <Post
+        img={"https://unavatar.io/itextosoff"}
+        user={"itextosoff"}
+        imgPrincipal={
+          "https://pbs.twimg.com/media/GTsqDF_XoAAQ8EQ?format=jpg&name=900x900"
+        }
+        tiempo={"2 Año"}
+      />
       <div className="espacio">
         <br /><br />
       </div>
