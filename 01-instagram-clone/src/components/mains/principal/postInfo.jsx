@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icono3puntos } from '../../navegacion/iconos'
-const PostInfo = ({img, user, lugar, tiempo}) => {
+const PostInfo = ({ img, user, lugar, tiempo }) => {
   return (
     <div className="postInfo">
         <div className="imgPostInfo">
