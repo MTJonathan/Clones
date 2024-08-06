@@ -1,4 +1,6 @@
-const PostDescripcion = ({ user, txt="" }) => {
+
+const PostDescripcion = ({ user, txt="", count }) => {
+  
   const getStyledText = (text) => {
     const hashIndex = text.indexOf("#");
     const atIndex = text.indexOf("@");
@@ -29,9 +31,10 @@ const PostDescripcion = ({ user, txt="" }) => {
       </>
     );
   };
+
   return (
     <div className="postDescripcion">
-      <span className='megutasDescripcion'>0 Me gusta</span>
+      <span className='megutasDescripcion'>{count} Me gusta</span>
       <div className="descripcionPost">
         <span className='userDescripcion'>{user} </span>
         <span className="txtPost">

@@ -7,7 +7,7 @@ import {
   CorazonActiveSvg,
   GuardarActiveSvg,
 } from "../../../navegacion/iconos";
-const PostBtn = () => {
+const PostBtn = ({ count, setCount }) => {
   const {
     classCompartir,
     classCompartir2,
@@ -20,7 +20,7 @@ const PostBtn = () => {
   return (
     <div className="postBtn">
       <div className="principales">
-        <span className="corazon" onClick={handleClickCorazon}>
+        <span className="corazon" onClick={() => handleClickCorazon(setCount, count)}>
           <span className={classCorazon2}>
             <CorazonSvg />
           </span>

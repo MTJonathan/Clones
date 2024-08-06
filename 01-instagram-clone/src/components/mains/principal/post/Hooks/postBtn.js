@@ -10,8 +10,13 @@ export const postBtnHooks = () => {
     const handleClickGuardar = () => {
         setCompartir(!compartir)
     }
-    const handleClickCorazon = () => {
+    const handleClickCorazon = ( setCount, count ) => {
         setCorazon(!corazon)
+        if(corazon) {
+            setCount(count - 1)
+        } else {
+            setCount(count + 1)
+        }
     }
 
     return { classCompartir, classCompartir2, classCorazon, classCorazon2, handleClickGuardar, handleClickCorazon }
