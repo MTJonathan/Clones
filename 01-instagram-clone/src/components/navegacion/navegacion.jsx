@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import '../../assets/css/navegacion/navegacion.css'
 import { Letra, Inicio, Busqueda, Explorar, Reels, Mensaje, Notificaciones, Crear, ImgPerfil, Menu } from './iconos.jsx'
@@ -7,30 +6,13 @@ import Opciones from './opciones.jsx'
 import {NavLinks} from './navLinks.jsx'
 import { CrearOpciones } from './crearOpciones.jsx'
 import { MasOpciones } from './masOpciones.jsx'
+import { navegacionHooks } from './Hooks/navegacion.js'
 function Navegacion() {
-    const [classCreate, setClassCreate] = useState(false)
-    const crearOpcionesRef = useRef(null)
-    const btnCrearRef = useRef(null)
-
+    const { classCreate, setClassCreate, crearOpcionesRef, btnCrearRef, txtClassCreate, handleClickCrear } = navegacionHooks()
+    
     const [classMas, setClassMas] = useState(false)
     const masOpcionesRef = useRef(null)
     const btnMasRef = useRef(null)
-    const handleClickCrear = (event) => {
-        event.stopPropagation();
-        setClassCreate(!classCreate);
-    }
-    const handleClickOutside = (event) => {
-        if (crearOpcionesRef.current && !crearOpcionesRef.current.contains(event.target) && btnCrearRef.current && !btnCrearRef.current.contains(event.target)) {
-            setClassCreate(false)
-        }
-    }
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside)
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
-    }, [])
-    
     const handleClickMas = () => {
         setClassMas(!classMas)
     }
@@ -45,7 +27,6 @@ function Navegacion() {
             document.removeEventListener('mousedown', handleClickOutsideMas)
         }
     }, [])
-    const txtClassCrate = classCreate ? 'crearOpciones' : 'noMostrarCrear'
     const txtClassMas = classMas ? 'masOpciones' : 'noMostrarMas'
     
     return(
@@ -62,7 +43,7 @@ function Navegacion() {
                         <NavLinks to='/messenger'><Opciones icono={<Mensaje/>} iconoActive={<MensajeActive/>} txt="Mensajes"/></NavLinks>
                         <NavLinks to='/notifications'><Opciones icono={<Notificaciones/>} iconoActive={<NotificacionesActive/>} txt="Notificaciones"/></NavLinks>
                         <Opciones icono={<Crear/>} handleClick={handleClickCrear} ref={btnCrearRef} txt="Crear"/>
-                        <CrearOpciones classPrincipal={txtClassCrate} ref={crearOpcionesRef}/>
+                        <CrearOpciones classPrincipal={txtClassCreate} ref={crearOpcionesRef}/>
                         <NavLinks to='/profile'><Opciones icono={<ImgPerfil/>} iconoActive={<ImgPerfil/>} txt="Perfil"/></NavLinks>
                         <Opciones icono={<Menu/>} ref={btnMasRef} txt="Más" handleClick={handleClickMas}/>
                         <MasOpciones ref={masOpcionesRef} classPrincipal={txtClassMas}/>

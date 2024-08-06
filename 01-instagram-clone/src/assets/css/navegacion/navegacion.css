@@ -1,17 +1,17 @@
 .navegacion{
     display: grid;
+    position: sticky;
+    top: 0;
     height: 100vh;
     text-align: start;
+    border-right: 1px solid #1D1D1C;
 }
 .navegacionContainer{
     display: grid;
-    width: 19%;
-    position: fixed;
-    margin: 0 auto;
-    padding: 35px 13px;
+    width: 90%;
+    margin: 35px auto;
     top: 0;
     gap: 25px;
-    border-right: 1px solid #1D1D1C;
 }
 .navegacion nav{
     display: flex;
@@ -101,9 +101,7 @@
         justify-content: center;
     }
     .navegacionContainer{
-        width: 7%;
-        padding: 0 20px 0 10px;
-        margin: 35 auto;
+        margin: 23px auto;
     }
     .opcionNav .txtOpcion{
         display: none;
