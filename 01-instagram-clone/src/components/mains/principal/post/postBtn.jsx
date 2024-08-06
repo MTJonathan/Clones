@@ -15,12 +15,12 @@ const PostBtn = ({ count, setCount }) => {
     classCorazon2,
     handleClickGuardar,
     handleClickCorazon,
-  } = postBtnHooks();
+  } = postBtnHooks( setCount, count );
   
   return (
     <div className="postBtn">
       <div className="principales">
-        <span className="corazon" onClick={() => handleClickCorazon(setCount, count)}>
+        <span className="corazon" onClick={handleClickCorazon}>
           <span className={classCorazon2}>
             <CorazonSvg />
           </span>

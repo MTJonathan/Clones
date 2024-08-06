@@ -34,9 +34,6 @@
 .opcionesPostDesabled {
   display: none;
 }
-body.modal-abierto {
-  overflow: hidden; /* Oculta la barra de desplazamiento */
-}
 @media(width <= 500px){
     .opcionesPostContainer{
         width: 80%;

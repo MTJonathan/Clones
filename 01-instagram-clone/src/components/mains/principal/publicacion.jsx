@@ -14,6 +14,7 @@ const Publicacion = () => {
           imgPrincipal={publicacion.imgPrincipal}
           tiempo={publicacion.tiempo}
           txt={publicacion.txt}
+          countCorazon={publicacion.corazones}
         />
       ))}
     </section>

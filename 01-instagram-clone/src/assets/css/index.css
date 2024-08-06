@@ -9,6 +9,10 @@
 body{
   background-color: #010000;
 }
+body.modal-abierto {
+  overflow: hidden; /* Oculta la barra de desplazamiento */
+  padding-right: 17px;
+}
 #root{
   display: grid;
   grid-template-columns: 19% 1fr;
@@ -27,6 +31,9 @@ a{
 @media(width < 1264px){
     #root{
       grid-template-columns: 7% 1fr;
+    }
+    body.modal-abierto {
+      padding: 0;
     }
 }
 @media(width < 1060px){

@@ -2,8 +2,12 @@ import PostInfo from "./postInfo";
 import PostBtn from "./postBtn";
 import PostDescripcion from "./postDescripcion";
 import { useState } from "react";
-const Post = ({ img, user, lugar, imgPrincipal, tiempo, txt }) => {
-  const [ count, setCount ] = useState(0);
+const Post = ({ img, user, lugar, imgPrincipal, tiempo, txt, countCorazon=0 }) => {
+  const formatNumber = (number) => {
+    return number.toLocaleString('de-DE');
+  };
+  const initialCount = formatNumber(countCorazon);
+  const [ count, setCount ] = useState(initialCount);
   return (
     <article className="post">
       <PostInfo img={img} user={user} lugar={lugar} tiempo={tiempo} />

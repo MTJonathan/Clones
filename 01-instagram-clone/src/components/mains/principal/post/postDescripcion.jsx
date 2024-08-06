@@ -2,34 +2,25 @@
 const PostDescripcion = ({ user, txt="", count }) => {
   
   const getStyledText = (text) => {
-    const hashIndex = text.indexOf("#");
-    const atIndex = text.indexOf("@");
-
-    if (hashIndex === -1 && atIndex === -1) {
-      return text;
-    }
-
-    const splitIndex = Math.min(
-      hashIndex === -1 ? Infinity : hashIndex,
-      atIndex === -1 ? Infinity : atIndex
-    );
-
-    const prefix = text.slice(0, splitIndex);
-    const suffix = text.slice(splitIndex);
-    const tag = suffix[0] === "#" ? "hashtag" : "atTag";
-    const styledSuffix = (
-      <span className={tag}>
-        {suffix[0]}
-        {suffix.slice(1)}
-      </span>
-    );
-
-    return (
-      <>
-        {prefix}
-        {styledSuffix}
-      </>
-    );
+    const parts = text.split(/([#@][\w-]+)/);
+  
+    return parts.map((part, index) => {
+      if (part.startsWith("#")) {
+        return (
+          <span key={index} className="hashtag">
+            {part}
+          </span>
+        );
+      }
+      if (part.startsWith("@")) {
+        return (
+          <span key={index} className="atTag">
+            {part}
+          </span>
+        );
+      }
+      return part;
+    });
   };
 
   return (
