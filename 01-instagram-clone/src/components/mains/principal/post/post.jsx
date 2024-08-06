@@ -1,7 +1,7 @@
 import PostInfo from "./postInfo";
 import PostBtn from "./postBtn";
 import PostDescripcion from "./postDescripcion";
-const Post = ({ img, user, lugar, imgPrincipal, tiempo }) => {
+const Post = ({ img, user, lugar, imgPrincipal, tiempo, txt }) => {
   return (
     <article className="post">
       <PostInfo img={img} user={user} lugar={lugar} tiempo={tiempo} />
@@ -9,7 +9,7 @@ const Post = ({ img, user, lugar, imgPrincipal, tiempo }) => {
         <img src={imgPrincipal} alt={user} />
       </div>
       <PostBtn />
-      <PostDescripcion user={user}/>
+      <PostDescripcion user={user} txt={txt}/>
     </article>
   );
 };

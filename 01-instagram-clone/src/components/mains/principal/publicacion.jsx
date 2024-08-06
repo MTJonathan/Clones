@@ -13,6 +13,7 @@ const Publicacion = () => {
           lugar={publicacion.lugar}
           imgPrincipal={publicacion.imgPrincipal}
           tiempo={publicacion.tiempo}
+          txt={publicacion.txt}
         />
       ))}
     </section>

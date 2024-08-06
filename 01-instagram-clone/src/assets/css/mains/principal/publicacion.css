@@ -114,6 +114,11 @@ list-style: none;
   font-size: 14.8px;
   color: #707273;
 }
+.hashtag, .atTag{
+  color: #0095f6;
+  cursor: pointer;
+}
+
 @keyframes heart-beat {
   0% {
     transform: scale(1);
