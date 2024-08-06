@@ -1,6 +1,6 @@
 import React from "react";
-import { idiomas } from "../../../assets/JS/idiomas";
-import { footerEnlaces } from "../../../assets/JS/footerEnlaces";
+import { idiomas } from "./JS/idiomas";
+import { footerEnlaces } from "./JS/footerEnlaces";
 const Footer = ({ className }) => {
   return (
     <footer className={className}>

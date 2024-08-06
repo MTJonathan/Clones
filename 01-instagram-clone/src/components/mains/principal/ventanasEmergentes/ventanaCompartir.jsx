@@ -1,12 +1,5 @@
-import React from "react";
-const Item = ({ txt, img }) => {
-  return (
-    <li>
-      <div className="imgCompartir">{img}</div>
-      <div className="txtCompartir">{txt}</div>
-    </li>
-  );
-}
+import { ItemCompartir } from "./ItemCompartir";
+
 const VentanaCompartir = () => {
   return (
     <aside className="ventanaCompartir">
@@ -22,11 +15,11 @@ const VentanaCompartir = () => {
         <article className="sugerenciasCompartir">
           <h3>Sugerencias</h3>
           <ul>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
+            <ItemCompartir/>
+            <ItemCompartir/>
+            <ItemCompartir/>
+            <ItemCompartir/>
+            <ItemCompartir/>
           </ul>
         </article>
       </div>

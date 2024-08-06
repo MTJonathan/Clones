@@ -1,17 +1,8 @@
-import React, { useState } from 'react'
-import { Icono3puntos } from '../../navegacion/iconos'
-import OpcionesPost from './ventanasEmergentes/opcionesPost'
+import { postInfoHook } from './Hooks/postInfo'
+import { Icono3puntos } from '../../../navegacion/iconos'
+import OpcionesPost from '../ventanasEmergentes/opcionesPost'
 const PostInfo = ({ img, user, lugar, tiempo }) => {
-  const [active, setActive] = useState(false)
-  const handleClick = () => {
-    if (active) {
-      document.body.classList.remove("modal-abierto");
-    }else {
-      document.body.classList.add("modal-abierto");
-    }
-    setActive(!active)
-  }
-  const className = active ? "opcionesPost" : "opcionesPostDesabled";
+  const { handleClick, className, setActive } = postInfoHook();
   return (
     <>
       <OpcionesPost className={className} handleClick={handleClick} setActive={setActive}/>

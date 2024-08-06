@@ -1,4 +1,3 @@
-import React from "react";
 import PostInfo from "./postInfo";
 import PostBtn from "./postBtn";
 import PostDescripcion from "./postDescripcion";

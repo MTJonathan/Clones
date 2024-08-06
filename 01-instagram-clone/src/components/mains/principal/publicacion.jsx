@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Post from "./post";
+import Post from "./post/post";
 import "../../../assets/css/mains/principal/publicacion.css";
-import { publicacionesArray } from "../../../assets/JS/publicaciones";
+import { publicacionesArray } from "./JS/publicaciones";
 const Publicacion = () => {
   const [publicaciones, setPublicaciones] = useState(publicacionesArray);
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Sugerencias from "../../sugerencias/sugerencias";
 import "../../../assets/css/mains/principal/principal.css";
-import Storys from "./storys";
+import Storys from "./Storys/storys";
 import Publicacion from "./publicacion";
 import Footer from "../404/footer";
 function Principal() {
