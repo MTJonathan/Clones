@@ -1,12 +1,11 @@
 import { NavLinks } from "./navLinks"
 import Opciones from "./opciones"
-import { useState, useEffect, useRef } from "react"
 import { Inicio, Explorar, Reels, Mensaje, Crear, ImgPerfil } from './iconos.jsx'
 import { InicioActive, ExplorarActive, ReelsActive, MensajeActive } from './iconosActive.jsx'
 import { CrearOpciones } from "./crearOpciones.jsx"
 import { navegacionHooks } from "./Hooks/navegacion.js"
 export const NavegacionResponse = () =>{
-    const { classCreate, setClassCreate, crearOpcionesRef, btnCrearRef, handleClickCrear } = navegacionHooks()
+    const { classCreate, crearOpcionesRef, btnCrearRef, handleClickCrear } = navegacionHooks()
     const txtClassCreate = classCreate ? 'crearOpciones crearOpcionesResponsive' : 'noMostrarCrear'
     return(
         <>
