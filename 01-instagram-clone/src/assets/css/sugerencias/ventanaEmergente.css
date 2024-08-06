@@ -1,5 +1,5 @@
 .ventanaEmergente{
-    position: absolute;
+    position: fixed;
     display: none;
     place-items: center;
     width: 100vw;

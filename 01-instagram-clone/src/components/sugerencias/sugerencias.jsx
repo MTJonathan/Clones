@@ -1,5 +1,8 @@
 import React from 'react'
-import {Perfiles, PerfilPrincipal, Separador, Informacion} from './perfiles'
+import {Perfiles} from './perfiles'
+import { Informacion } from './informacion'
+import { PerfilPrincipal } from './perfilPrincipal'
+import { Separador } from './separador'
 import '../../assets/css/sugerencias/sugerencias.css'
 import perfilIcono from '../../assets/img/navegacion/perfilIcono.jpg'
 function Sugerencias() {
