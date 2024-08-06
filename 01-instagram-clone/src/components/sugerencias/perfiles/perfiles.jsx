@@ -1,4 +1,4 @@
-import { VentanaEmergente } from './ventanaEmergente'
+import { VentanaEmergente } from '../ventanaEmergentes/ventanaEmergente';
 import { perfilesHook } from './Hooks/perfiles';
 export function Perfiles({user,txt}) {
     const {handleFollow, DejarSeguir, desactivarVentana, txtBtn, btnClass, btnCancelar} = perfilesHook();

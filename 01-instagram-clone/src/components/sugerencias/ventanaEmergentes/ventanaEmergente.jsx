@@ -1,4 +1,4 @@
-import '../../assets/css/sugerencias/ventanaEmergente.css'
+import '../../../assets/css/sugerencias/ventanaEmergente.css'
 export function VentanaEmergente({btnCancelar, user, desactivarVentana, dejarDeSeguir}) {
     return(
         <>

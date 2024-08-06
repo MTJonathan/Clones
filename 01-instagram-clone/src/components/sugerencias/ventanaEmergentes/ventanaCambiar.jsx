@@ -1,5 +1,5 @@
-import { LetraCambiar } from "../navegacion/iconos"
-import '../../assets/css/sugerencias/ventanaCambiar.css'
+import { LetraCambiar } from "../../navegacion/iconos"
+import '../../../assets/css/sugerencias/ventanaCambiar.css'
 export function VentanaCambiar({ventanaCambiarClass, desactivarVentana}) {
     return(
         <>

@@ -1,5 +1,5 @@
 import { perfilPrincipalhook } from './Hooks/perfilPrincipal';
-import { VentanaCambiar } from './ventanaCambiar';
+import { VentanaCambiar } from '../ventanaEmergentes/ventanaCambiar';
 export function PerfilPrincipal({img,user,txt, txtBtn}) {
     const{cerrarVentanaCambiar, activeVentanaCambiar, ventanaCambiarClass} = perfilPrincipalhook();
     return(
