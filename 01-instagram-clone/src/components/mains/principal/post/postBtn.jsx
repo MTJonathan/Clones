@@ -8,7 +8,6 @@ import {
   GuardarActiveSvg,
 } from "../../../navegacion/iconos";
 import VentanaCompartir from "../ventanasEmergentes/ventanaCompartir";
-import { useState } from "react";
 const PostBtn = ({ count, setCount }) => {
   const {
     classGuardar,
@@ -19,8 +18,11 @@ const PostBtn = ({ count, setCount }) => {
     handleClickCorazon,
     classCompartir,
     handleClickCompartir,
+    selectedUsers,
+    handleCheckboxChange,
+    isAnyCheckboxSelected,
   } = postBtnHooks(setCount, count);
-
+  
   return (
     <>
       <div className="postBtn">
@@ -49,7 +51,13 @@ const PostBtn = ({ count, setCount }) => {
           </span>
         </div>
       </div>
-      <VentanaCompartir className={classCompartir} handleClick={handleClickCompartir}/>
+      <VentanaCompartir
+        className={classCompartir}
+        handleClick={handleClickCompartir}
+        selectedUsers={selectedUsers}
+        handleCheckboxChange={handleCheckboxChange}
+        isAnyCheckboxSelected={isAnyCheckboxSelected}
+      />
     </>
   );
 };

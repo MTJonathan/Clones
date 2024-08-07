@@ -1,5 +1,5 @@
 import { useId } from "react";
-export const ItemCompartir = ({ user, userName, img }) => {
+export const ItemCompartir = ({ user, userName, img, isChecked, handleCheckboxChange }) => {
   const id = useId();
   return (
     <li>
@@ -8,8 +8,8 @@ export const ItemCompartir = ({ user, userName, img }) => {
         <div className="txtCompartir">
           <span className="userCompartir">{user}</span> <span className="userNameCompartir">{userName}</span>
         </div>
-        <input type="checkbox" id={id}/>
-        <label htmlFor={id} className="check"></label>
+        <input type="checkbox" id={id} checked={isChecked} onChange={() => handleCheckboxChange(user)}/>
+        <div className="check"></div>
       </label>
     </li>
   );

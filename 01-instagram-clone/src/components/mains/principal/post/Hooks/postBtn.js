@@ -6,6 +6,7 @@ export const postBtnHooks = (setCount, count) => {
   const [corazon, setCorazon] = useState(false);
   const [guardar, setGuardar] = useState(false);
   const [compartir, setCompartir] = useState(false);
+  const [selectedUsers, setSelectedUsers] = useState({});
 
   const classGuardar = guardar ? "guardarActive" : "guardarDesabled";
   const classGuardar2 = guardar ? "guardarDesabled" : "guardarActive";
@@ -28,7 +29,16 @@ export const postBtnHooks = (setCount, count) => {
     setCompartir(!compartir);
     compartir ? document.body.classList.remove("modal-abierto") : document.body.classList.add("modal-abierto");
   };
+  const handleCheckboxChange = (user) => {
+    setSelectedUsers((prevSelected) => ({
+      ...prevSelected,
+      [user]: !prevSelected[user],
+    }));
+  };
 
+  const isAnyCheckboxSelected = Object.values(selectedUsers).some(
+    (value) => value
+  );
   return {
     classGuardar,
     classGuardar2,
@@ -38,5 +48,8 @@ export const postBtnHooks = (setCount, count) => {
     handleClickCorazon,
     classCompartir,
     handleClickCompartir,
+    selectedUsers,
+    handleCheckboxChange,
+    isAnyCheckboxSelected,
   };
 };
