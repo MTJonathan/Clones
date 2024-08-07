@@ -2,17 +2,14 @@ import { useState } from "react";
 const formatNumber = (number) => {
   return number.toLocaleString("de-DE");
 };
-export const postBtnHooks = (setCount, count) => {
+export const postBtnHooks = ( countCorazon ) => {
   const [corazon, setCorazon] = useState(false);
   const [guardar, setGuardar] = useState(false);
   const [compartir, setCompartir] = useState(false);
   const [selectedUsers, setSelectedUsers] = useState({});
-
-  const classGuardar = guardar ? "guardarActive" : "guardarDesabled";
-  const classGuardar2 = guardar ? "guardarDesabled" : "guardarActive";
-  const classCorazon = corazon ? "corazonActive" : "corazonDesabled";
-  const classCorazon2 = corazon ? "corazonDesabled" : "corazonActive";
-  const classCompartir = compartir ? "compartirActive" : "compartirDesabled";
+  const initialCount = formatNumber(countCorazon);
+  const [count, setCount] = useState(initialCount);
+  const [meGusta, setMeGusta] = useState(false);
   const handleClickGuardar = () => {
     setGuardar(!guardar);
   };
@@ -35,21 +32,35 @@ export const postBtnHooks = (setCount, count) => {
       [user]: !prevSelected[user],
     }));
   };
-
+  const handleDoubleClick = () => {
+    if(!corazon){
+      setMeGusta(true);
+      setTimeout(()=>{
+        setMeGusta(false);
+      }, 1000)
+      handleClickCorazon();
+    } else {
+      setMeGusta(true);
+      setTimeout(()=>{
+        setMeGusta(false);
+      }, 1000)
+    }
+  };
   const isAnyCheckboxSelected = Object.values(selectedUsers).some(
     (value) => value
   );
   return {
-    classGuardar,
-    classGuardar2,
-    classCorazon,
-    classCorazon2,
     handleClickGuardar,
     handleClickCorazon,
-    classCompartir,
     handleClickCompartir,
     selectedUsers,
     handleCheckboxChange,
     isAnyCheckboxSelected,
+    corazon,
+    guardar,
+    compartir,
+    count,
+    meGusta,
+    handleDoubleClick,
   };
 };

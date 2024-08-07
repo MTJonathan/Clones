@@ -1,4 +1,3 @@
-import { postBtnHooks } from "./Hooks/postBtn";
 import {
   CorazonSvg,
   Mensaje,
@@ -8,21 +7,23 @@ import {
   GuardarActiveSvg,
 } from "../../../navegacion/iconos";
 import VentanaCompartir from "../ventanasEmergentes/ventanaCompartir";
-const PostBtn = ({ count, setCount }) => {
-  const {
-    classGuardar,
-    classGuardar2,
-    classCorazon,
-    classCorazon2,
-    handleClickGuardar,
-    handleClickCorazon,
-    classCompartir,
-    handleClickCompartir,
-    selectedUsers,
-    handleCheckboxChange,
-    isAnyCheckboxSelected,
-  } = postBtnHooks(setCount, count);
+const PostBtn = ({
+  handleClickGuardar,
+  handleClickCorazon,
+  handleClickCompartir,
+  selectedUsers,
+  handleCheckboxChange,
+  isAnyCheckboxSelected,
+  corazon,
+  guardar,
+  compartir,
+}) => {
   
+  const classGuardar = guardar ? "guardarActive" : "guardarDesabled";
+  const classGuardar2 = guardar ? "guardarDesabled" : "guardarActive";
+  const classCorazon = corazon ? "corazonActive" : "corazonDesabled";
+  const classCorazon2 = corazon ? "corazonDesabled" : "corazonActive";
+  const classCompartir = compartir ? "compartirActive" : "compartirDesabled";
   return (
     <>
       <div className="postBtn">
