@@ -50,6 +50,10 @@
 .isActive .iconoOpcionActive{
     display: block;
 }
+.opcionNav:hover svg, .opcionNav:hover img{
+    scale: 1.1;
+}
+
 
 .logoResponsive{
     display: none;

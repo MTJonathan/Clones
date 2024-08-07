@@ -4,14 +4,16 @@ const formatNumber = (number) => {
 };
 export const postBtnHooks = (setCount, count) => {
   const [corazon, setCorazon] = useState(false);
+  const [guardar, setGuardar] = useState(false);
   const [compartir, setCompartir] = useState(false);
 
-  const classCompartir = compartir ? "compartirActive" : "compartirDesabled";
-  const classCompartir2 = compartir ? "compartirDesabled" : "compartirActive";
+  const classGuardar = guardar ? "guardarActive" : "guardarDesabled";
+  const classGuardar2 = guardar ? "guardarDesabled" : "guardarActive";
   const classCorazon = corazon ? "corazonActive" : "corazonDesabled";
   const classCorazon2 = corazon ? "corazonDesabled" : "corazonActive";
+  const classCompartir = compartir ? "compartirActive" : "compartirDesabled";
   const handleClickGuardar = () => {
-    setCompartir(!compartir);
+    setGuardar(!guardar);
   };
   const handleClickCorazon = () => {
     setCorazon((prevCorazon) => {
@@ -22,12 +24,19 @@ export const postBtnHooks = (setCount, count) => {
     });
   };
 
+  const handleClickCompartir = () => {
+    setCompartir(!compartir);
+    compartir ? document.body.classList.remove("modal-abierto") : document.body.classList.add("modal-abierto");
+  };
+
   return {
-    classCompartir,
-    classCompartir2,
+    classGuardar,
+    classGuardar2,
     classCorazon,
     classCorazon2,
     handleClickGuardar,
     handleClickCorazon,
+    classCompartir,
+    handleClickCompartir,
   };
 };

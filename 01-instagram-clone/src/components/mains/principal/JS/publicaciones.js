@@ -1,5 +1,13 @@
 export const publicacionesArray = [
   {
+    img: "https://unavatar.io/ClubALoficial",
+    user: "alianzalima",
+    imgPrincipal: "https://pbs.twimg.com/media/GTlamJQXIAAsAkR?format=jpg&name=large",
+    tiempo: "1 Meses",
+    txt: "¡PERÚ! 🇵🇪 País de gente que lucha, de personas que salen adelante… poniéndole CORAZÓN. El mismo CORAZÓN con el que se levantan en las adversidades. Ese CORAZÓN que nos hace perseverar con esfuerzo y pasión. ¡Arriba Perú, siempre podemos cuando ponemos el CORAZÓN ! 💙🇵🇪",
+    corazones: 3032
+  },
+  {
     img: "https://unavatar.io/fanovargas",
     user: "fanodric",
     imgPrincipal:
@@ -24,6 +32,14 @@ export const publicacionesArray = [
     tiempo: "1 horas",
     txt: "Desde aquí se continúa viendo que no te ama",
     corazones: 2339962
+  },
+  {
+    img: "https://unavatar.io/ipdperu",
+    user: "ipdperu",
+    imgPrincipal: "https://pbs.twimg.com/media/GUOvQQQXIAAVVNU?format=jpg&name=900x900",
+    tiempo: "1 Días",
+    txt: "¡STEFANO PESCHIERA IRÁ POR UNA MEDALLA EN PARÍS 2024! 🔝 🇵🇪 El velerista del Programa París 2024 del IPD clasificó a la regata por medallas en tercera posición de la general en dinghy masculino, tras cancelarse las regatas finales de la serie inaugural. 📷 @worldsailing",
+    corazones: 3031
   },
   {
     img: "https://unavatar.io/realmadriden",
@@ -89,9 +105,9 @@ export const publicacionesArray = [
   },
   {
     img: "https://unavatar.io/itshannaowo",
-    user: "itshannaowo",
+    user: "itshannahowo",
     imgPrincipal:
-      "https://bolavip.com/__export/1667401383079/sites/bolavip/img/2022/11/02/hannahowo.jpg_1216690859.jpg",
+      "https://pbs.twimg.com/media/EvlyFa5WgAAPP98?format=jpg&name=large",
     lugar: "USA",
     tiempo: "5 Horas",
     txt: "holaaaaaaaaaaaaa ha pasado un tiempo 🫎",

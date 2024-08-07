@@ -12,7 +12,7 @@ const PostInfo = ({ img, user, lugar, tiempo }) => {
         </div>
         <div className="usarioPostInfo">
           <div className="usuario">
-            <span>{user}</span>
+            <span className='userPostInfo'>{user}</span>
             <li><span> • </span>{tiempo}</li>
           </div>
           <div className="lugar">
