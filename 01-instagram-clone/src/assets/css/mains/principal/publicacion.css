@@ -49,7 +49,7 @@
 .usarioPostInfo li span {
   color: #949594 !important;
 }
-.usarioPostInfo .icono {
+.postInfo .icono {
   width: 23px;
   height: 23px;
   cursor: pointer;
