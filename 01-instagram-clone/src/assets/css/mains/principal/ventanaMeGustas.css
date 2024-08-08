@@ -1,0 +1,31 @@
+.ventanaMeGustasActive {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ventanaMeGustasDesactive {
+  display: none;
+}
+.ventanaMeGustasContainer {
+  width: 480px;
+  border-radius: 13px;
+  background-color: #262726;
+}
+.ventanaMeGustasActive header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+.ventanaMeGustasActive header h2 {
+  width: 100%;
+}
+.ventanaMeGustasActive header span {
+  cursor: pointer;
+}

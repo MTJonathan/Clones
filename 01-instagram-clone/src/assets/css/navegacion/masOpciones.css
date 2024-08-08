@@ -1,69 +1,72 @@
-.masOpciones{
-    position: absolute;
-    top: 0;
-    left: 28px;
-    transform: translateY(20px);
-    background-color: #272627;
-    padding: 8px;
-    border-radius: 13px;
-    width: 300px;
+.masOpciones {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  left: 28px;
+  transform: translateY(20px);
+  background-color: #272627;
+  padding: 8px;
+  border-radius: 13px;
+  width: 300px;
 }
-.masOpciones ul{
-    list-style-type: none;
+.masOpciones ul {
+  list-style-type: none;
 }
-.masOpciones ul a{
-    display: flex;
+.masOpciones ul a {
+  display: flex;
+  width: 100%;
+  gap: 13px;
+}
+.masOpciones .threads .svgCompartir svg {
+  width: 23px;
+}
+.txtThreads{
     width: 100%;
-    gap: 13px;
 }
-.masOpciones .threads .svgCompartir svg{
-    width: 23px;
-    transform: translate(123px);
+.masOpciones .threads .svgCompartir path {
+  color: transparent;
 }
-.masOpciones .threads .svgCompartir path{
-    color: transparent;
+.masOpciones ul li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-radius: 13px;
 }
-.masOpciones ul li{
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    border-radius: 13px;
+.masOpciones ul li:hover {
+  cursor: pointer;
+  background-color: #3d3d3c;
 }
-.masOpciones ul li:hover{
-    cursor: pointer;
-    background-color: #3D3D3C;
+.masOpciones ul li:hover .svgCompartir path {
+  color: #868787;
 }
-.masOpciones ul li:hover .svgCompartir path{
-    color: #868787;
+.masOpcionesPrincipales {
+  padding-bottom: 8px;
 }
-.masOpcionesPrincipales{
-    padding-bottom: 8px;
+.masOpcionesPrincipales li {
+  padding: 14px 20px;
 }
-.masOpcionesPrincipales li{
-    padding: 14px 20px;
+.threads {
+  border-top: 5px solid #3d3d3c;
+  border-bottom: 5px solid #3d3d3c;
+  padding: 8px 0;
 }
-.threads{
-    border-top: 5px solid #3D3D3C;
-    border-bottom: 5px solid #3D3D3C;
-    padding: 8px 0;
+.threads li a {
+  align-items: center;
+  padding: 20px 20px;
 }
-.threads li a{
-    align-items: center;
-    padding: 20px 20px;
+.masOpcionesCambiar {
+  padding: 8px 0;
 }
-.masOpcionesCambiar{
-    padding: 8px 0;
+.masOpcionesCambiar li {
+  padding: 18px 20px;
 }
-.masOpcionesCambiar li{
-    padding: 18px 20px;
+.masOpcionesSalir {
+  border-top: 1.5px solid #3d3d3c;
+  padding: 8px 0;
 }
-.masOpcionesSalir{
-    border-top: 1.5px solid #3D3D3C;
-    padding: 8px 0;
+.masOpcionesSalir li {
+  padding: 18px 20px;
 }
-.masOpcionesSalir li{
-    padding: 18px 20px;
-}
-.noMostrarMas{
-    display: none;
+.noMostrarMas {
+  display: none;
 }

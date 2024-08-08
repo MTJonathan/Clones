@@ -12,6 +12,10 @@ export const postBtnHooks = ( countCorazon ) => {
   const [meGusta, setMeGusta] = useState(false);
   const [active, setActive] = useState(false);
   const [comentar, setComentar] = useState(false);
+  const [meGustas, setMeGustas] = useState(false);
+  const handleClickMeGusta = () => {
+    setMeGustas(!meGustas);
+  }
   const handleClickGuardar = () => {
     setGuardar(!guardar);
   };
@@ -77,6 +81,7 @@ export const postBtnHooks = ( countCorazon ) => {
     handleClickCompartir,
     handleClickOpciones,
     handleClickComentar,
+    handleClickMeGusta,
     selectedUsers,
     handleCheckboxChange,
     isAnyCheckboxSelected,
@@ -88,6 +93,7 @@ export const postBtnHooks = ( countCorazon ) => {
     handleDoubleClick,
     active,
     setActive,
-    comentar
+    comentar,
+    meGustas
   };
 };

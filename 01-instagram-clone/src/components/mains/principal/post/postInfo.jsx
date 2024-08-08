@@ -17,10 +17,10 @@ const PostInfo = ({ img, user, lugar, tiempo, active, handleClick, setActive }) 
           <div className="lugar">
             <span>{lugar}</span>
           </div>
-          <div className="icono" onClick={handleClick}>
-            <Icono3puntos />
-          </div>
         </div>
+        <span className="icono" onClick={handleClick}>
+            <Icono3puntos />
+        </span>
       </header>
     </>
   )

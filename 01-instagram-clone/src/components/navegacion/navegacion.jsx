@@ -28,11 +28,10 @@ function Navegacion() {
                         <CrearOpciones classPrincipal={txtClassCreate} ref={crearOpcionesRef}/>
                         <NavLinks to='/profile'><Opciones icono={<ImgPerfil/>} iconoActive={<ImgPerfil/>} txt="Perfil"/></NavLinks>
                         <Opciones icono={<Menu/>} ref={btnMasRef} txt="Más" handleClick={handleClickMas}/>
-                        <MasOpciones ref={masOpcionesRef} classPrincipal={txtClassMas}/>
                     </nav>
                 </div>
-                
             </aside>
+            <MasOpciones ref={masOpcionesRef} classPrincipal={txtClassMas}/>
         </>
     )
 }

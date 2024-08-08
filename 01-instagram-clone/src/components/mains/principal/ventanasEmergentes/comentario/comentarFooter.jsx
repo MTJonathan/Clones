@@ -16,6 +16,7 @@ const ComentarFooter = ({
   handleClickCorazon,
   handleClickGuardar,
   handleClickCompartir,
+  handleClickMeGustas,
   countCorazon,
   tiempo,
 }) => {
@@ -52,7 +53,7 @@ const ComentarFooter = ({
       </section>
       <section className="infoComentarBtn">
         <div className="corazones">
-          <span>{countCorazon} Me Gusta</span>
+          <span onClick={handleClickMeGustas}>{countCorazon} Me Gusta</span>
           <span>Hace {tiempo}</span>
         </div>
       </section>

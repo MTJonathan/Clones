@@ -1,4 +1,4 @@
-const PostDescripcion = ({ user, txt="", count, handleClickComentar }) => {
+const PostDescripcion = ({ user, txt="", count, handleClickComentar, handleClickMeGustas }) => {
   const getStyledText = (text) => {
     const parts = text.split(/([#@][\w-]+)/);
   
@@ -23,7 +23,7 @@ const PostDescripcion = ({ user, txt="", count, handleClickComentar }) => {
 
   return (
     <div className="postDescripcion">
-      <span className='megutasDescripcion'>{count} Me gusta</span>
+      <span className='megutasDescripcion' onClick={handleClickMeGustas}>{count} Me gusta</span>
       <div className="descripcionPost">
         <span className='userDescripcion'>{user} </span>
         <span className="txtPost">

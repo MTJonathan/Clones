@@ -1,6 +1,6 @@
 .comentariosContenido {
   overflow: hidden;
-  height: 62%;
+  height: 100%;
   border-bottom: 1.5px solid #242424;
 }
 .ventanaComentarDesabled {
@@ -90,7 +90,9 @@
   align-self: flex-start;
 }
 .comentarFooter{
-  height: 150px;
+  position: sticky;
+  border-top: 1.5px solid #242424;
+  bottom: 0;
 }
 .comentarBtn {
   display: flex;
