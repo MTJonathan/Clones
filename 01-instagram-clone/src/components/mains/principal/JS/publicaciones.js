@@ -71,9 +71,9 @@ export const publicacionesArray = [
     img: "https://unavatar.io/FCBarcelona_es",
     user: "FCBarcelona",
     imgPrincipal:
-      "https://cdn2.mediotiempo.com/uploads/media/2024/05/21/alexia-putellas-renovo-barcelona-ig.jpg",
+      "https://pbs.twimg.com/media/GUWH2iNXEAAQYfm?format=jpg&name=4096x4096",
     tiempo: "1 Años",
-    txt: "¡Va a ser una larga noche, culers! 🪩",
+    txt: "🫶 Baltimore",
     corazones: 97589
   },
   {
@@ -86,12 +86,12 @@ export const publicacionesArray = [
     corazones: 3059150
   },
   {
-    img: "https://unavatar.io/luanalonsom",
-    user: "luanalonsom",
+    img: "https://unavatar.io/ClubSCristal",
+    user: "SportingCristal",
     imgPrincipal:
-      "https://pbs.twimg.com/media/Fi2fPffWAAEdWKF?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GUTcHWMWIAALouk?format=jpg&name=large",
     tiempo: "2 Años",
-    txt: "Mi cara: 👼 Mi brazo: 👹",
+    txt: "Agradecemos a todos los nutricionistas que nos enseñan a alimentarnos mejor y a cuidar nuestra salud día a día. 🥗🍎🥑 #FuerzaCristal",
     corazones: 185044
   },
   {
@@ -133,12 +133,12 @@ export const publicacionesArray = [
     corazones: 41213
   },
   {
-    img: "https://unavatar.io/SENATI_PERU",
+    img: "https://unavatar.io/FmsperuOficial",
     user: "SENATI_PERU",
     imgPrincipal:
-      "https://pbs.twimg.com/media/GUQHGqSWAAAOPLf?format=jpg&name=900x900",
+      "https://pbs.twimg.com/media/GUahDOxXIAAcNAl?format=jpg&name=large",
     tiempo: "5 Días",
-    txt: "👏 Felicitaciones a Ismael Reyna Chuqui, Franklin Ramos Solis, Jhon Bravo Cotrina, Carlos Cuipal Rojas, Antony Saciga Uriarte y a todos los demás participantes por su dedicación y esfuerzo. #DeSENATISeNace",
+    txt: "¡LA VOTACIÓN DEL PÚBLICO HA EMPEZADO! 🤯🗳️ Puede votar por NEKROOS y VIJAY para Que participen en la SUPERLIGA 😍 Los dos MC’s que acumulen más votos de todas las FMS, pasan a votación final 1vs1 🌎❤️‍🔥 Vota en el link del hilo 🚀",
     corazones: 65
   },
 ];

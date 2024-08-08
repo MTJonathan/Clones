@@ -10,6 +10,8 @@ export const postBtnHooks = ( countCorazon ) => {
   const initialCount = formatNumber(countCorazon);
   const [count, setCount] = useState(initialCount);
   const [meGusta, setMeGusta] = useState(false);
+  const [active, setActive] = useState(false);
+  const [comentar, setComentar] = useState(false);
   const handleClickGuardar = () => {
     setGuardar(!guardar);
   };
@@ -23,8 +25,14 @@ export const postBtnHooks = ( countCorazon ) => {
   };
 
   const handleClickCompartir = () => {
+    if (compartir) {
+      if(!comentar){
+        document.body.classList.remove("modal-abierto");
+      }
+    } else {
+      document.body.classList.add("modal-abierto");
+    }
     setCompartir(!compartir);
-    compartir ? document.body.classList.remove("modal-abierto") : document.body.classList.add("modal-abierto");
   };
   const handleCheckboxChange = (user) => {
     setSelectedUsers((prevSelected) => ({
@@ -46,6 +54,20 @@ export const postBtnHooks = ( countCorazon ) => {
       }, 1000)
     }
   };
+  const handleClickComentar = () => {
+    setComentar(!comentar);
+    comentar ? document.body.classList.remove("modal-abierto") : document.body.classList.add("modal-abierto");
+  }
+  const handleClickOpciones = () => {
+    if (active) {
+      if(!comentar){
+        document.body.classList.remove("modal-abierto");
+      }
+    } else {
+      document.body.classList.add("modal-abierto");
+    }
+    setActive(!active);
+  };
   const isAnyCheckboxSelected = Object.values(selectedUsers).some(
     (value) => value
   );
@@ -53,6 +75,8 @@ export const postBtnHooks = ( countCorazon ) => {
     handleClickGuardar,
     handleClickCorazon,
     handleClickCompartir,
+    handleClickOpciones,
+    handleClickComentar,
     selectedUsers,
     handleCheckboxChange,
     isAnyCheckboxSelected,
@@ -62,5 +86,8 @@ export const postBtnHooks = ( countCorazon ) => {
     count,
     meGusta,
     handleDoubleClick,
+    active,
+    setActive,
+    comentar
   };
 };

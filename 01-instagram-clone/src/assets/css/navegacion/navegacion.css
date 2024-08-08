@@ -8,6 +8,7 @@
 }
 .navegacionContainer{
     display: grid;
+    align-items: center;
     width: 90%;
     margin: 35px auto;
     top: 0;
@@ -17,6 +18,9 @@
     display: flex;
     flex-direction: column;
     gap: 5px
+}
+.logoLetra{
+    margin-bottom: 13px;
 }
 .ig-letra{
     margin-left: 15px;
@@ -53,10 +57,9 @@
 .opcionNav:hover svg, .opcionNav:hover img{
     scale: 1.1;
 }
-
-
 .logoResponsive{
     display: none;
+    margin-bottom: 13px;
     transform: translateX(16px);
 }
 .navegacionResponsiva{

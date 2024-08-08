@@ -15,9 +15,9 @@ function Navegacion() {
         <>
             <aside className='navegacion'>
                 <div className="navegacionContainer">
-                    <Letra />
-                    <LogoResposive/>
                     <nav>
+                        <Letra />
+                        <LogoResposive/>
                         <NavLinks to='/'><Opciones icono={<Inicio/>} iconoActive={<InicioActive/>} txt="Inicio"/></NavLinks>
                         <Opciones icono={<Busqueda/>} txt="Busqueda"/>
                         <NavLinks to='/explorer'><Opciones icono={<Explorar/>} iconoActive={<ExplorarActive/>} txt="Explorar"/></NavLinks>

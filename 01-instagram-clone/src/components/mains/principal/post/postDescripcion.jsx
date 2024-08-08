@@ -1,6 +1,4 @@
-
-const PostDescripcion = ({ user, txt="", count }) => {
-  
+const PostDescripcion = ({ user, txt="", count, handleClickComentar }) => {
   const getStyledText = (text) => {
     const parts = text.split(/([#@][\w-]+)/);
   
@@ -32,7 +30,7 @@ const PostDescripcion = ({ user, txt="", count }) => {
           {getStyledText(txt)}
         </span>
       </div>
-      <span className='verComentariosDescripcion'>Ver los comentarios</span>
+      <span className='verComentariosDescripcion' onClick={handleClickComentar}>Ver los comentarios</span>
       <form onSubmit={e => e.preventDefault()}>
         <input className='comentarInput' type="text" placeholder='Añade un comentario...' />
       </form>
