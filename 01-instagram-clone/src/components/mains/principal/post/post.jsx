@@ -43,6 +43,7 @@ const Post = ({ img, user, lugar, imgPrincipal, tiempo, txt, countCorazon = 0 })
             selectedUsers={selectedUsers}
             handleCheckboxChange={handleCheckboxChange}
             isAnyCheckboxSelected={isAnyCheckboxSelected}
+            handleClickMeGustas={handleClickMeGusta}
             countCorazon={count}
             tiempo={tiempo}
             corazon={corazon}

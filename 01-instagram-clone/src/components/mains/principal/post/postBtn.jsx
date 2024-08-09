@@ -15,6 +15,7 @@ const PostBtn = ({
   handleClickComentar,
   handleClickOpciones,
   handleDoubleClick,
+  handleClickMeGustas,
   selectedUsers,
   handleCheckboxChange,
   isAnyCheckboxSelected,
@@ -46,6 +47,7 @@ const PostBtn = ({
         handleClickGuardar={handleClickGuardar}
         handleClickCompartir={handleClickCompartir}
         handleDoubleClick={handleDoubleClick}
+        handleClickMeGustas={handleClickMeGustas}
         img={img}
         user={user}
         handleClickOpciones={handleClickOpciones}

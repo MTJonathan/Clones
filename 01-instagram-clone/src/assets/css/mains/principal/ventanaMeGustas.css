@@ -13,7 +13,13 @@
   display: none;
 }
 .ventanaMeGustasContainer {
-  width: 480px;
+  display: grid;
+  position: sticky;
+  top: 0;
+  grid-template-rows: 50px auto;
+  position: relative;
+  width: 423px;
+  height: 400px;
   border-radius: 13px;
   background-color: #262726;
 }
@@ -22,10 +28,61 @@
   align-items: center;
   padding: 10px 20px;
   text-align: center;
+  border-bottom: 2px solid #303130;
 }
 .ventanaMeGustasActive header h2 {
+  font-size: 16px;
   width: 100%;
 }
 .ventanaMeGustasActive header span {
   cursor: pointer;
+}
+.usuariosMeGusta{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 15px;
+  overflow-y: scroll;
+}
+.usuarioMeGustaContainer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.imgUsuarioMeGusta img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.userMeGusta{
+  display: grid;
+  width: 100%;
+}
+.userMeGusta span:first-child{
+  font-size: 14px;
+  font-weight: 600;
+}
+.userMeGusta span:last-child{
+  font-size: 14px;
+  color: #787978;
+}
+.btnMeGusta button{
+  width: 85px;
+  background-color: #0194F6;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+.btnSeguirMeGustaActive{
+  background-color: #464747 !important;
+  width: 110px !important;
+}
+@media (width <= 500px){
+  .ventanaMeGustasContainer{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+  }
 }

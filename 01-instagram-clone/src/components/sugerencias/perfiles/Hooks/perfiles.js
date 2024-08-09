@@ -29,6 +29,7 @@ export const perfilesHook = () => {
         desactivarVentana,
         txtBtn,
         btnClass,
-        btnCancelar
+        btnCancelar,
+        isFollowing
     }
 }

@@ -12,6 +12,7 @@ const VentanaComentar = ({
   handleClickGuardar,
   handleClickCompartir,
   handleDoubleClick,
+  handleClickMeGustas,
   img, 
   user, 
   meGusta,
@@ -44,6 +45,7 @@ const VentanaComentar = ({
             handleClickCorazon={handleClickCorazon}
             handleClickGuardar={handleClickGuardar}
             handleClickCompartir={handleClickCompartir}
+            handleClickMeGustas={handleClickMeGustas}
             classGuardar={classGuardar}
             classGuardar2={classGuardar2}
             countCorazon={countCorazon}

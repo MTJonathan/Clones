@@ -15,6 +15,11 @@ export const postBtnHooks = ( countCorazon ) => {
   const [meGustas, setMeGustas] = useState(false);
   const handleClickMeGusta = () => {
     setMeGustas(!meGustas);
+    if (meGustas) {
+      document.body.classList.remove("modal-abierto");
+    } else {
+      document.body.classList.add("modal-abierto");
+    }
   }
   const handleClickGuardar = () => {
     setGuardar(!guardar);
